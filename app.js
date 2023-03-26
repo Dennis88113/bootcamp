@@ -28,6 +28,7 @@ getData().then(r => {
             card.setAttribute('class', 'card')
             card.setAttribute('id', data.results[i].id)
             cardImage.setAttribute('class', 'card__image')
+            cardImage.setAttribute('loading', 'lazy')
             cardImage.setAttribute('alt', data.results[i].name)
             cardCaption.setAttribute('class', 'card__caption')
             avatar = data.results[i].image;
